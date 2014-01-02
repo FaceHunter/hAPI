@@ -696,6 +696,21 @@
     <ClInclude Include="Steam\Server\SteamApps\SteamApps003.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Steam\Server\SteamApps\SteamApps004.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="STDInc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Steam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Server\SteamApps\SteamApps005.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Steam\Server\SteamApps\SteamApps001.cpp">
@@ -705,6 +720,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Steam\Server\SteamApps\SteamApps003.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\Server\SteamApps\SteamApps004.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\Server\SteamApps\SteamApps005.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hAPI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

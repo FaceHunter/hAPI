@@ -42,13 +42,13 @@
     <OutDir>$(SolutionDir)\Bin\$(Configuration)\</OutDir>
     <TargetName>steam_api</TargetName>
     <TargetExt>.dll</TargetExt>
-    <IncludePath>C:\Users\Convery\Documents\GitHub\hAPI\HHS;C:\Users\Convery\Documents\GitHub\hAPI\Steam;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Convery\Documents\GitHub\hAPI\HHS;C:\Users\Convery\Documents\GitHub\hAPI;C:\Users\Convery\Documents\GitHub\hAPI\Steam;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)\Bin\$(Configuration)\</OutDir>
     <TargetName>steam_api</TargetName>
     <TargetExt>.dll</TargetExt>
-    <IncludePath>C:\Users\Convery\Documents\GitHub\hAPI\HHS;C:\Users\Convery\Documents\GitHub\hAPI\Steam;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Convery\Documents\GitHub\hAPI\HHS;C:\Users\Convery\Documents\GitHub\hAPI;C:\Users\Convery\Documents\GitHub\hAPI\Steam;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -75,6 +75,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Steam\Server\SteamApps\SteamApps005.h" />
+    <ClInclude Include="Steam\Server\SteamApps\SteamApps004.h" />
     <ClInclude Include="Steam\OSW\AppsCommon.h" />
     <ClInclude Include="Steam\OSW\AppTicketCommon.h" />
     <ClInclude Include="Steam\OSW\BillingCommon.h" />
@@ -302,11 +304,18 @@
     <ClInclude Include="Steam\Server\SteamApps\SteamApps003.h" />
     <ClInclude Include="Steam\Server\SteamApps\SteamApps001.h" />
     <ClInclude Include="Steam\Server\SteamApps\SteamApps002.h" />
+    <ClInclude Include="Steam\Steam.h" />
+    <ClInclude Include="Utils\Log.h" />
+    <ClInclude Include="STDInc.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Steam\Server\SteamApps\SteamApps005.cpp" />
+    <ClCompile Include="Steam\Server\SteamApps\SteamApps004.cpp" />
     <ClCompile Include="Steam\Server\SteamApps\SteamApps001.cpp" />
     <ClCompile Include="Steam\Server\SteamApps\SteamApps002.cpp" />
     <ClCompile Include="Steam\Server\SteamApps\SteamApps003.cpp" />
+    <ClCompile Include="hAPI.cpp" />
+    <ClCompile Include="Utils\Log.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
