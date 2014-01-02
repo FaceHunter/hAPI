@@ -791,5 +791,8 @@
     <ClCompile Include="Steam\Server\SteamClient\SteamClient007.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Steam\Server\SteamClient\SteamClient008.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
