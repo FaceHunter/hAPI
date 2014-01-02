@@ -75,13 +75,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="Steam\Credits.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="HHS\HHS.h" />
-    <ClInclude Include="HHS\HHSCommon.h" />
-    <ClInclude Include="HHS\HHSNetwork.h" />
-    <ClInclude Include="HHS\HHSUser.h" />
     <ClInclude Include="Steam\OSW\AppsCommon.h" />
     <ClInclude Include="Steam\OSW\AppTicketCommon.h" />
     <ClInclude Include="Steam\OSW\BillingCommon.h" />
@@ -306,6 +299,14 @@
     <ClInclude Include="Steam\OSW\UserStatsCommon.h" />
     <ClInclude Include="Steam\OSW\UtilsCommon.h" />
     <ClInclude Include="Steam\OSW\Win32Library.h" />
+    <ClInclude Include="Steam\Server\SteamApps\SteamApps003.h" />
+    <ClInclude Include="Steam\Server\SteamApps\SteamApps001.h" />
+    <ClInclude Include="Steam\Server\SteamApps\SteamApps002.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Steam\Server\SteamApps\SteamApps001.cpp" />
+    <ClCompile Include="Steam\Server\SteamApps\SteamApps002.cpp" />
+    <ClCompile Include="Steam\Server\SteamApps\SteamApps003.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

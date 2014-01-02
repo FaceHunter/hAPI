@@ -1,33 +1,32 @@
 #include "SteamApps002.h"
-#include <HHSCommon.h>
 
-bool BIsSubscribed()
+bool SteamApps002::BIsSubscribed()
 {
 	return true;
 }
-bool BIsLowViolence()
+bool SteamApps002::BIsLowViolence()
 {
 	return false;
 }
-bool BIsCybercafe()
+bool SteamApps002::BIsCybercafe()
 {
 	return false;
 }
-bool BIsVACBanned()
+bool SteamApps002::BIsVACBanned()
 {
-	return HHSCommon::GetUser()->GetPermissions() == HHSPerm::Banned;
+	return false;
 }
 
-const char *GetCurrentGameLanguage()
+const char *SteamApps002::GetCurrentGameLanguage()
 {
 	return "english";
 }
-const char *GetAvailableGameLanguages()
+const char *SteamApps002::GetAvailableGameLanguages()
 {
 	return "english";
 }
 
-bool BIsSubscribedApp(AppId_t nAppID)
+bool SteamApps002::BIsSubscribedApp(AppId_t nAppID)
 {
-	return HHSCommon::GetNetwork()->IsSubscribed(nAppID);
+	return true;
 }

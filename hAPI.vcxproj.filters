@@ -15,21 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Steam\Credits.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="HHS\HHSCommon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HHS\HHS.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HHS\HHSNetwork.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HHS\HHSUser.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Steam\OSW\AppsCommon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -702,5 +687,25 @@
     <ClInclude Include="Steam\OSW\Win32Library.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Steam\Server\SteamApps\SteamApps001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Server\SteamApps\SteamApps002.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Server\SteamApps\SteamApps003.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Steam\Server\SteamApps\SteamApps001.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\Server\SteamApps\SteamApps002.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\Server\SteamApps\SteamApps003.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
