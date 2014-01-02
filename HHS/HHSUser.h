@@ -2,11 +2,6 @@
 
 #include "HHS.h"
 
-enum HHSPerm
-{
-	Guest, Member, Moderator, Admin, Developer, Banned,
-};
-
 class HHSUser
 {
 public:
