@@ -4,6 +4,8 @@ void SteamCommon::Init()
 {
 	steamID = new CSteamID();
 
+	// TODO: Read which version of the classes to instanciate.
+
 	strcpy(&playerName[0], "Convery");
 }
 
@@ -26,7 +28,6 @@ SteamAPICall_t SteamCommon::RequestEncryptedAppTicket(const void *pUserData, int
 
 	return callID;
 }
-
 
 CSteamID *SteamCommon::GetSteamID()
 {
@@ -108,6 +109,21 @@ ISteamUtils *SteamCommon::GetSteamUtils()
 	return steamUtils;
 }
 
+ISteamBilling *SteamCommon::GetSteamBilling()
+{
+	return steamBilling;
+}
+
+ISteamContentServer *SteamCommon::GetSteamContentServer()
+{
+	return steamContentServer;
+}
+
+ISteamMasterServerUpdater *SteamCommon::GetSteamMasterServerUpdater()
+{
+	return steamMasterServerUpdater;
+}
+
 CSteamID *SteamCommon::steamID = NULL;
 ISteamApps *SteamCommon::steamApps = NULL;
 ISteamFriends *SteamCommon::steamFriends = NULL;
@@ -121,6 +137,10 @@ ISteamRemoteStorage *SteamCommon::steamRemoteStorage = NULL;
 ISteamUser *SteamCommon::steamUser = NULL;
 ISteamUserStats *SteamCommon::steamUserStats = NULL;
 ISteamUtils *SteamCommon::steamUtils = NULL;
+
+ISteamBilling *SteamCommon::steamBilling = NULL;
+ISteamContentServer *SteamCommon::steamContentServer = NULL;
+ISteamMasterServerUpdater *SteamCommon::steamMasterServerUpdater = NULL;
 
 char SteamCommon::encryptedAppTicket[128];
 char SteamCommon::playerName[255];

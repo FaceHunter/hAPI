@@ -170,7 +170,7 @@ void Log::CreateConsole(LPCSTR caption)
 {
 	AllocConsole();
 	AttachConsole(GetCurrentProcessId());
-	freopen("CON", "w", stdout);
+	freopen("CON", "w", stdout); //-V530
 	SetConsoleTitleA(caption);
 }
 

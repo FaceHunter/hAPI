@@ -3,7 +3,7 @@
 HSteamPipe SteamClient006::CreateSteamPipe()
 {
 	HHSDBG();
-	return NULL;
+	return 1;
 }
 
 bool SteamClient006::BReleaseSteamPipe(HSteamPipe hSteamPipe)
@@ -38,7 +38,7 @@ void SteamClient006::ReleaseUser(HSteamPipe hSteamPipe, HSteamUser hUser)
 ISteamUser *SteamClient006::GetISteamUser(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
 {
 	HHSDBG();
-	return NULL;
+	return SteamCommon::GetSteamUser();
 }
 
 IVAC *SteamClient006::GetIVAC(HSteamUser hSteamUser)
@@ -50,7 +50,7 @@ IVAC *SteamClient006::GetIVAC(HSteamUser hSteamUser)
 ISteamGameServer *SteamClient006::GetISteamGameServer(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
 {
 	HHSDBG();
-	return NULL;
+	return SteamCommon::GetSteamGameServer();
 }
 
 void SteamClient006::SetLocalIPBinding(uint32 unIP, uint16 usPort)
@@ -61,55 +61,55 @@ void SteamClient006::SetLocalIPBinding(uint32 unIP, uint16 usPort)
 const char *SteamClient006::GetUniverseName(EUniverse eUniverse)
 {
 	HHSDBG();
-	return NULL;
+	return "k_EUniversePublic"; // SteamCommon::GetSteamID()->GetEUniverse();
 }
 
 ISteamFriends *SteamClient006::GetISteamFriends(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
 {
 	HHSDBG();
-	return NULL;
+	return SteamCommon::GetSteamFriends();
 }
 
 ISteamUtils *SteamClient006::GetISteamUtils(HSteamPipe hSteamPipe, const char *pchVersion)
 {
 	HHSDBG();
-	return NULL;
+	return SteamCommon::GetSteamUtils();
 }
 
 ISteamBilling *SteamClient006::GetISteamBilling(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
 {
 	HHSDBG();
-	return NULL;
+	return SteamCommon::GetSteamBilling();
 }
 
 ISteamMatchmaking *SteamClient006::GetISteamMatchmaking(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
 {
 	HHSDBG();
-	return NULL;
+	return SteamCommon::GetSteamMatchmaking();
 }
 
 ISteamContentServer *SteamClient006::GetISteamContentServer(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
 {
 	HHSDBG();
-	return NULL;
+	return SteamCommon::GetSteamContentServer();
 }
 
 ISteamApps *SteamClient006::GetISteamApps(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
 {
 	HHSDBG();
-	return NULL;
+	return SteamCommon::GetSteamApps();
 }
 
 ISteamMasterServerUpdater *SteamClient006::GetISteamMasterServerUpdater(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
 {
 	HHSDBG();
-	return NULL;
+	return SteamCommon::GetSteamMasterServerUpdater();
 }
 
 ISteamMatchmakingServers *SteamClient006::GetISteamMatchmakingServers(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
 {
 	HHSDBG();
-	return NULL;
+	return SteamCommon::GetSteamMatchmakingServers();
 }
 
 void SteamClient006::RunFrame()
@@ -120,5 +120,5 @@ void SteamClient006::RunFrame()
 uint32 SteamClient006::GetIPCCallCount()
 {
 	HHSDBG();
-	return NULL;
+	return 1338;
 }

@@ -31,6 +31,10 @@ public:
 	static ISteamUtils *GetSteamUtils();
 	static ISteamUserStats *GetSteamUserStats();
 
+	static ISteamBilling *GetSteamBilling();
+	static ISteamContentServer *GetSteamContentServer();
+	static ISteamMasterServerUpdater *GetSteamMasterServerUpdater();
+
 private:
 	static CSteamID *steamID;
 
@@ -49,6 +53,10 @@ private:
 	static ISteamUser *steamUser;
 	static ISteamUtils *steamUtils;
 	static ISteamUserStats *steamUserStats;
+
+	static ISteamBilling *steamBilling;
+	static ISteamContentServer *steamContentServer;
+	static ISteamMasterServerUpdater *steamMasterServerUpdater;
 
 	static char encryptedAppTicket[128];
 	static char playerName[255];
