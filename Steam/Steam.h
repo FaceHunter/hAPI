@@ -11,7 +11,16 @@
 
 #include "OSW\ISteamAppTicket001.h"
 
+#include "OSW\ISteamBilling001.h"
+#include "OSW\ISteamBilling002.h"
 
+#include "OSW\ISteamClient006.h"
+#include "OSW\ISteamClient007.h"
+#include "OSW\ISteamClient008.h"
+#include "OSW\ISteamClient009.h"
+#include "OSW\ISteamClient010.h"
+#include "OSW\ISteamClient011.h"
+#include "OSW\ISteamClient012.h"
 
 
 
@@ -28,7 +37,8 @@
 // SteamTickets
 #include "Server\SteamAppTicket\SteamAppTicket001.h"
 
-
-
+// SteamBilling
+#include "Server\SteamBilling\SteamBilling001.h"
+#include "Server\SteamBilling\SteamBilling002.h"
 
 

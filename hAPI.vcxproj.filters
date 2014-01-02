@@ -714,6 +714,12 @@
     <ClInclude Include="Steam\Server\SteamAppTicket\SteamAppTicket001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Steam\Server\SteamBilling\SteamBilling001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Server\SteamBilling\SteamBilling002.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Steam\Server\SteamApps\SteamApps001.cpp">
@@ -738,6 +744,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Steam\Server\SteamAppTicket\SteamAppTicket001.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\Server\SteamBilling\SteamBilling001.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\Server\SteamBilling\SteamBilling002.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

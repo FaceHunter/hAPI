@@ -1,3 +1,5 @@
+#pragma once
+
 #include <OSW\ISteamAppTicket001.h>
 
 class SteamAppTicket001 : ISteamAppTicket001
