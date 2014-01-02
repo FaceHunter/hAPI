@@ -304,6 +304,7 @@
     <ClInclude Include="Steam\Server\SteamApps\SteamApps003.h" />
     <ClInclude Include="Steam\Server\SteamApps\SteamApps001.h" />
     <ClInclude Include="Steam\Server\SteamApps\SteamApps002.h" />
+    <ClInclude Include="Steam\Server\SteamAppTicket\SteamAppTicket001.h" />
     <ClInclude Include="Steam\Steam.h" />
     <ClInclude Include="Utils\Log.h" />
     <ClInclude Include="STDInc.h" />
@@ -315,6 +316,7 @@
     <ClCompile Include="Steam\Server\SteamApps\SteamApps002.cpp" />
     <ClCompile Include="Steam\Server\SteamApps\SteamApps003.cpp" />
     <ClCompile Include="hAPI.cpp" />
+    <ClCompile Include="Steam\Server\SteamAppTicket\SteamAppTicket001.cpp" />
     <ClCompile Include="Utils\Log.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
