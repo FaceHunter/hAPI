@@ -720,6 +720,33 @@
     <ClInclude Include="Steam\Server\SteamBilling\SteamBilling002.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient006.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient007.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient008.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient009.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient010.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient011.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient012.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\SteamCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Callbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Steam\Server\SteamApps\SteamApps001.cpp">
@@ -750,6 +777,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Steam\Server\SteamBilling\SteamBilling002.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\Server\SteamClient\SteamClient006.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\SteamCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\Callbacks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

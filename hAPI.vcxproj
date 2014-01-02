@@ -75,6 +75,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Steam\Callbacks.h" />
     <ClInclude Include="Steam\Server\SteamApps\SteamApps005.h" />
     <ClInclude Include="Steam\Server\SteamApps\SteamApps004.h" />
     <ClInclude Include="Steam\OSW\AppsCommon.h" />
@@ -307,11 +308,20 @@
     <ClInclude Include="Steam\Server\SteamAppTicket\SteamAppTicket001.h" />
     <ClInclude Include="Steam\Server\SteamBilling\SteamBilling001.h" />
     <ClInclude Include="Steam\Server\SteamBilling\SteamBilling002.h" />
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient006.h" />
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient007.h" />
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient008.h" />
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient009.h" />
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient010.h" />
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient011.h" />
+    <ClInclude Include="Steam\Server\SteamClient\SteamClient012.h" />
     <ClInclude Include="Steam\Steam.h" />
+    <ClInclude Include="Steam\SteamCommon.h" />
     <ClInclude Include="Utils\Log.h" />
     <ClInclude Include="STDInc.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Steam\Callbacks.cpp" />
     <ClCompile Include="Steam\Server\SteamApps\SteamApps005.cpp" />
     <ClCompile Include="Steam\Server\SteamApps\SteamApps004.cpp" />
     <ClCompile Include="Steam\Server\SteamApps\SteamApps001.cpp" />
@@ -321,6 +331,8 @@
     <ClCompile Include="Steam\Server\SteamAppTicket\SteamAppTicket001.cpp" />
     <ClCompile Include="Steam\Server\SteamBilling\SteamBilling001.cpp" />
     <ClCompile Include="Steam\Server\SteamBilling\SteamBilling002.cpp" />
+    <ClCompile Include="Steam\Server\SteamClient\SteamClient006.cpp" />
+    <ClCompile Include="Steam\SteamCommon.cpp" />
     <ClCompile Include="Utils\Log.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -26,7 +26,7 @@
 //-----------------------------------------------------------------------------
 // Purpose: interface to billing
 //-----------------------------------------------------------------------------
-abstract_class ISteamBilling002
+abstract_class OBSOLETE_INTERFACE ISteamBilling002
 {
 public:
 

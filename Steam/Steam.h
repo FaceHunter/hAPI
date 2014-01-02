@@ -1,6 +1,21 @@
 #pragma once
 
+#ifndef STEAMWORKS_OBSOLETE_INTERFACES
+#define STEAMWORKS_OBSOLETE_INTERFACES
+#endif
+
+#ifndef STEAMWORKS_OBSOLETE_FUNCTIONS
+#define STEAMWORKS_OBSOLETE_FUNCTIONS
+#endif
+
 #include <STDInc.h>
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <ctime>
+#include <sys/stat.h>
+#include <list>
+#include <map>
 
 // OpenSteamWorks Interfaces
 #include "OSW\ISteamApps001.h"
@@ -22,7 +37,8 @@
 #include "OSW\ISteamClient011.h"
 #include "OSW\ISteamClient012.h"
 
-
+#include "OSW\CCallback.h"
+#include "OSW\UserCommon.h"
 
 
 
@@ -41,4 +57,23 @@
 #include "Server\SteamBilling\SteamBilling001.h"
 #include "Server\SteamBilling\SteamBilling002.h"
 
+// SteamClient
+#include "Server\SteamClient\SteamClient006.h"
+#include "Server\SteamClient\SteamClient007.h"
+#include "Server\SteamClient\SteamClient008.h"
+#include "Server\SteamClient\SteamClient009.h"
+#include "Server\SteamClient\SteamClient010.h"
+#include "Server\SteamClient\SteamClient011.h"
+#include "Server\SteamClient\SteamClient012.h"
 
+// Callbacks
+#include "Callbacks.h"
+
+
+
+
+
+
+
+// SteamCommon
+#include "SteamCommon.h"
