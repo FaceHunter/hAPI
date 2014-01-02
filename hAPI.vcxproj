@@ -332,6 +332,7 @@
     <ClCompile Include="Steam\Server\SteamBilling\SteamBilling001.cpp" />
     <ClCompile Include="Steam\Server\SteamBilling\SteamBilling002.cpp" />
     <ClCompile Include="Steam\Server\SteamClient\SteamClient006.cpp" />
+    <ClCompile Include="Steam\Server\SteamClient\SteamClient007.cpp" />
     <ClCompile Include="Steam\SteamCommon.cpp" />
     <ClCompile Include="Utils\Log.cpp" />
   </ItemGroup>
