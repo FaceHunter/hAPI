@@ -687,18 +687,6 @@
     <ClInclude Include="Steam\OSW\Win32Library.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Steam\Server\SteamApps\SteamApps001.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamApps\SteamApps002.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamApps\SteamApps003.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamApps\SteamApps004.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Utils\Log.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -708,81 +696,69 @@
     <ClInclude Include="Steam\Steam.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Steam\Server\SteamApps\SteamApps005.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamAppTicket\SteamAppTicket001.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamBilling\SteamBilling001.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamBilling\SteamBilling002.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamClient\SteamClient006.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamClient\SteamClient007.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamClient\SteamClient008.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamClient\SteamClient009.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamClient\SteamClient010.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamClient\SteamClient011.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Steam\Server\SteamClient\SteamClient012.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Steam\SteamCommon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Steam\Callbacks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Steam\Server\SteamUnifiedMessages\SteamUnifiedMessages001.h">
+    <ClInclude Include="Steam\ISteam\SteamApps\SteamApps001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamApps\SteamApps002.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamApps\SteamApps003.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamApps\SteamApps004.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamApps\SteamApps005.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamAppTicket\SteamAppTicket001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamBilling\SteamBilling001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamBilling\SteamBilling002.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamClient\SteamClient006.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamClient\SteamClient007.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamClient\SteamClient008.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamClient\SteamClient009.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamClient\SteamClient010.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamClient\SteamClient011.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamClient\SteamClient012.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamController\SteamController001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamUnifiedMessages\SteamUnifiedMessages001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Steam\Server\SteamApps\SteamApps001.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Steam\Server\SteamApps\SteamApps002.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Steam\Server\SteamApps\SteamApps003.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Steam\Server\SteamApps\SteamApps004.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Steam\Server\SteamApps\SteamApps005.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Utils\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="hAPI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Steam\Server\SteamAppTicket\SteamAppTicket001.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Steam\Server\SteamBilling\SteamBilling001.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Steam\Server\SteamBilling\SteamBilling002.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Steam\Server\SteamClient\SteamClient006.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Steam\SteamCommon.cpp">
@@ -791,25 +767,55 @@
     <ClCompile Include="Steam\Callbacks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Steam\Server\SteamClient\SteamClient007.cpp">
+    <ClCompile Include="Steam\ISteam\SteamApps\SteamApps001.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Steam\Server\SteamClient\SteamClient008.cpp">
+    <ClCompile Include="Steam\ISteam\SteamApps\SteamApps002.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Steam\Server\SteamClient\SteamClient009.cpp">
+    <ClCompile Include="Steam\ISteam\SteamApps\SteamApps003.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Steam\Server\SteamClient\SteamClient010.cpp">
+    <ClCompile Include="Steam\ISteam\SteamApps\SteamApps004.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Steam\Server\SteamClient\SteamClient011.cpp">
+    <ClCompile Include="Steam\ISteam\SteamApps\SteamApps005.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Steam\Server\SteamClient\SteamClient012.cpp">
+    <ClCompile Include="Steam\ISteam\SteamAppTicket\SteamAppTicket001.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Steam\Server\SteamUnifiedMessages\SteamUnifiedMessages001.cpp">
+    <ClCompile Include="Steam\ISteam\SteamBilling\SteamBilling001.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamBilling\SteamBilling002.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamClient\SteamClient006.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamClient\SteamClient007.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamClient\SteamClient008.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamClient\SteamClient009.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamClient\SteamClient010.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamClient\SteamClient011.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamClient\SteamClient012.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamController\SteamController001.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamUnifiedMessages\SteamUnifiedMessages001.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

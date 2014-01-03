@@ -23,12 +23,12 @@
 #include "SteamTypes.h"
 #include "ControllerCommon.h"
 
-class CAdapterSteamController001
+abstract_class ISteamController001
 {
-	virtual unknown_ret Init() = 0;
-	virtual unknown_ret Shutdown() = 0;
-	virtual unknown_ret RunFrame() = 0;
-	virtual unknown_ret GetControllerState( uint32 uUnk, SteamControllerState_t * pState ) = 0;
+	virtual bool Init() = 0;
+	virtual bool Shutdown() = 0;
+	virtual bool RunFrame() = 0;
+	virtual bool GetControllerState(uint32 uUnk, SteamControllerState_t * pState) = 0;
 };
 
 #endif

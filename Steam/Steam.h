@@ -46,36 +46,36 @@
 
 
 // SteamApps
-#include "Server\SteamApps\SteamApps001.h"
-#include "Server\SteamApps\SteamApps002.h"
-#include "Server\SteamApps\SteamApps003.h"
-#include "Server\SteamApps\SteamApps004.h"
-#include "Server\SteamApps\SteamApps005.h"
+#include "ISteam\SteamApps\SteamApps001.h"
+#include "ISteam\SteamApps\SteamApps002.h"
+#include "ISteam\SteamApps\SteamApps003.h"
+#include "ISteam\SteamApps\SteamApps004.h"
+#include "ISteam\SteamApps\SteamApps005.h"
 
 // SteamTickets
-#include "Server\SteamAppTicket\SteamAppTicket001.h"
+#include "ISteam\SteamAppTicket\SteamAppTicket001.h"
 
 // SteamBilling
-#include "Server\SteamBilling\SteamBilling001.h"
-#include "Server\SteamBilling\SteamBilling002.h"
+#include "ISteam\SteamBilling\SteamBilling001.h"
+#include "ISteam\SteamBilling\SteamBilling002.h"
 
 // SteamClient
-#include "Server\SteamClient\SteamClient006.h"
-#include "Server\SteamClient\SteamClient007.h"
-#include "Server\SteamClient\SteamClient008.h"
-#include "Server\SteamClient\SteamClient009.h"
-#include "Server\SteamClient\SteamClient010.h"
-#include "Server\SteamClient\SteamClient011.h"
-#include "Server\SteamClient\SteamClient012.h"
+#include "ISteam\SteamClient\SteamClient006.h"
+#include "ISteam\SteamClient\SteamClient007.h"
+#include "ISteam\SteamClient\SteamClient008.h"
+#include "ISteam\SteamClient\SteamClient009.h"
+#include "ISteam\SteamClient\SteamClient010.h"
+#include "ISteam\SteamClient\SteamClient011.h"
+#include "ISteam\SteamClient\SteamClient012.h"
 
 // Callbacks
 #include "Callbacks.h"
 
 // Messagages
-#include "Server\SteamUnifiedMessages\SteamUnifiedMessages001.h"
+#include "ISteam\SteamUnifiedMessages\SteamUnifiedMessages001.h"
 
 // Controller
-
+#include "ISteam\SteamController\SteamController001.h"
 
 
 
