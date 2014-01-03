@@ -20,7 +20,7 @@
 #pragma once
 #endif
 
-
+#include "GameServerCommon.h"
 
 #define CLIENTCONTENTSERVER_INTERFACE_VERSION "CLIENTCONTENTSERVER_INTERFACE_VERSION001"
 

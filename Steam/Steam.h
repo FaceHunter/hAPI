@@ -43,6 +43,11 @@
 #include "OSW\ISteamUnifiedMessages001.h"
 #include "OSW\ISteamController001.h"
 
+#include "OSW\ISteamContentServer001.h"
+#include "OSW\ISteamContentServer002.h"
+
+
+
 
 
 // SteamApps
@@ -77,8 +82,9 @@
 // Controller
 #include "ISteam\SteamController\SteamController001.h"
 
-
-
+// SteamContentServer
+#include "ISteam\SteamContentServer\SteamContentServer001.h"
+#include "ISteam\SteamContentServer\SteamContentServer002.h"
 
 
 

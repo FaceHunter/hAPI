@@ -753,6 +753,12 @@
     <ClInclude Include="Steam\ISteam\SteamUnifiedMessages\SteamUnifiedMessages001.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamContentServer\SteamContentServer001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamContentServer\SteamContentServer002.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Utils\Log.cpp">
@@ -816,6 +822,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Steam\ISteam\SteamUnifiedMessages\SteamUnifiedMessages001.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamContentServer\SteamContentServer002.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamContentServer\SteamContentServer001.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
