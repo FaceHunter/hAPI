@@ -124,6 +124,11 @@ ISteamMasterServerUpdater *SteamCommon::GetSteamMasterServerUpdater()
 	return steamMasterServerUpdater;
 }
 
+ISteamScreenshots *SteamCommon::GetSteamScreenshots()
+{
+	return steamScreenshots;
+}
+
 CSteamID *SteamCommon::steamID = NULL;
 ISteamApps *SteamCommon::steamApps = NULL;
 ISteamFriends *SteamCommon::steamFriends = NULL;
@@ -141,6 +146,9 @@ ISteamUtils *SteamCommon::steamUtils = NULL;
 ISteamBilling *SteamCommon::steamBilling = NULL;
 ISteamContentServer *SteamCommon::steamContentServer = NULL;
 ISteamMasterServerUpdater *SteamCommon::steamMasterServerUpdater = NULL;
+
+ISteamScreenshots *SteamCommon::steamScreenshots = NULL;
+
 
 char SteamCommon::encryptedAppTicket[128];
 char SteamCommon::playerName[255];
