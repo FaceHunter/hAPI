@@ -9,6 +9,9 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 		// Init
 		Log::Init("hAPI.log", LogLevel_All);
 		SteamCommon::Init();
+
+
+
 	}
 
 	if (ul_reason_for_call == DLL_PROCESS_DETACH)

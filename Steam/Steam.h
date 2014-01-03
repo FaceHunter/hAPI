@@ -46,6 +46,7 @@
 #include "OSW\ISteamContentServer001.h"
 #include "OSW\ISteamContentServer002.h"
 
+#include "OSW\ISteamFriends013.h"
 
 
 
@@ -86,7 +87,8 @@
 #include "ISteam\SteamContentServer\SteamContentServer001.h"
 #include "ISteam\SteamContentServer\SteamContentServer002.h"
 
-
+// Friends
+#include "ISteam\SteamFriends\SteamFriends013.h"
 
 
 

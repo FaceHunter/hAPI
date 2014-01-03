@@ -22,6 +22,7 @@ void SteamCommon::Init()
 		steamAppID = GetPrivateProfileIntA("Game", "SteamAppID", 0, "hAPI.ini");
 
 	// Which version of the classes to use.
+	// TODO: Find a better way..
 	if (ValueExists("Version", "SteamUser", "hAPI.ini"))
 	{
 		switch (GetPrivateProfileIntA("Version", "SteamUser", 0, "hAPI.ini"))
@@ -36,6 +37,10 @@ void SteamCommon::Init()
 	{
 		switch (GetPrivateProfileIntA("Version", "SteamFriends", 0, "hAPI.ini"))
 		{
+		case 013:
+			steamFriends = (ISteamFriends *) new SteamFriends013();
+			break;
+
 		default:
 			MessageBoxA(0, "SteamFriends version is not implemented.", 0, 0);
 			break;
@@ -86,6 +91,22 @@ void SteamCommon::Init()
 	{
 		switch (GetPrivateProfileIntA("Version", "SteamApps", 0, "hAPI.ini"))
 		{
+		case 001:
+			steamApps = (ISteamApps *) new SteamApps001();
+			break;
+		case 002:
+			steamApps = (ISteamApps *) new SteamApps002();
+			break;
+		case 003:
+			steamApps = (ISteamApps *) new SteamApps003();
+			break;
+		case 004:
+			steamApps = (ISteamApps *) new SteamApps004();
+			break;
+		case 005:
+			steamApps = (ISteamApps *) new SteamApps005();
+			break;
+
 		default:
 			MessageBoxA(0, "SteamApps version is not implemented.", 0, 0);
 			break;
