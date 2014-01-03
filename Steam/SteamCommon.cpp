@@ -8,6 +8,8 @@ bool ValueExists(char *Section, char *Key, char *File)
 	return false;
 }
 
+
+
 void SteamCommon::Init()
 { // I Think this is one of the ugliest functions I've ever written..
 	HHSDBG();
@@ -31,6 +33,9 @@ void SteamCommon::Init()
 	{
 		switch (GetPrivateProfileIntA("Version", "SteamUser", 0, Path))
 		{
+		case 017:
+			steamUser = (ISteamUser *)new SteamUser017();
+
 		default:
 			MessageBoxA(0, "Steamuser version is not implemented.", 0, 0);
 			break;
@@ -93,8 +98,6 @@ void SteamCommon::Init()
 
 	if (ValueExists("Version", "SteamApps", Path))
 	{
-		int K = GetPrivateProfileIntA("Version", "SteamApps", 0, Path);
-		K += 20;
 		switch (GetPrivateProfileIntA("Version", "SteamApps", 0, Path))
 		{
 		case 001:
