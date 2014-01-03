@@ -13,7 +13,7 @@
 #endif
 
 #ifdef DEVBUILD
-#define HHSDBG() Log::Debug(__FILE__, "%s()", __FUNCTION__)
+#define HHSDBG() Log::Debug("hAPI", "%s()", __FUNCTION__)
 #else
 #define HHSDBG()
 #endif

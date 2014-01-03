@@ -35,6 +35,12 @@ ISteamUser *SteamClient011::GetISteamUser(HSteamUser hSteamUser, HSteamPipe hSte
 	return SteamCommon::GetSteamUser();
 }
 
+ISteamGameServerStats *SteamClient011::GetISteamGameServerStats(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
+{
+	HHSDBG();
+	return SteamCommon::GetSteamGameServerStats();
+}
+
 ISteamGameServer *SteamClient011::GetISteamGameServer(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
 {
 	HHSDBG();

@@ -9,23 +9,27 @@ bool ValueExists(char *Section, char *Key, char *File)
 }
 
 void SteamCommon::Init()
-{
+{ // I Think this is one of the ugliest functions I've ever written..
 	HHSDBG();
 	steamID = new CSteamID();
 
 	char Buffer[512];
+	char Path[512];
 
-	if (GetPrivateProfileString("Authentication", "Username", "Unknown", Buffer, 512, "hAPI.ini") > 0)
+	GetCurrentDirectoryA(512, Path);
+	sprintf(Path, "%s\\hAPI.ini", Path);
+
+	if (GetPrivateProfileString("Authentication", "Username", "Unknown", Buffer, 512, Path) > 0)
 		strcpy(&playerName[0], Buffer);
 
-	if (ValueExists("Game", "SteamAppID", "hAPI.ini"))
-		steamAppID = GetPrivateProfileIntA("Game", "SteamAppID", 0, "hAPI.ini");
+	if (ValueExists("Game", "SteamAppID", Path))
+		steamAppID = GetPrivateProfileIntA("Game", "SteamAppID", 0, Path);
 
 	// Which version of the classes to use.
 	// TODO: Find a better way..
-	if (ValueExists("Version", "SteamUser", "hAPI.ini"))
+	if (ValueExists("Version", "SteamUser", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamUser", 0, "hAPI.ini"))
+		switch (GetPrivateProfileIntA("Version", "SteamUser", 0, Path))
 		{
 		default:
 			MessageBoxA(0, "Steamuser version is not implemented.", 0, 0);
@@ -33,9 +37,9 @@ void SteamCommon::Init()
 		}
 	}
 
-	if (ValueExists("Version", "SteamFriends", "hAPI.ini"))
+	if (ValueExists("Version", "SteamFriends", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamFriends", 0, "hAPI.ini"))
+		switch (GetPrivateProfileIntA("Version", "SteamFriends", 0, Path))
 		{
 		case 013:
 			steamFriends = (ISteamFriends *) new SteamFriends013();
@@ -47,9 +51,9 @@ void SteamCommon::Init()
 		}
 	}
 
-	if (ValueExists("Version", "SteamUtils", "hAPI.ini"))
+	if (ValueExists("Version", "SteamUtils", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamUtils", 0, "hAPI.ini"))
+		switch (GetPrivateProfileIntA("Version", "SteamUtils", 0, Path))
 		{
 		default:
 			MessageBoxA(0, "SteamUtils version is not implemented.", 0, 0);
@@ -57,9 +61,9 @@ void SteamCommon::Init()
 		}
 	}
 
-	if (ValueExists("Version", "SteamMatchMaking", "hAPI.ini"))
+	if (ValueExists("Version", "SteamMatchMaking", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamMatchMaking", 0, "hAPI.ini"))
+		switch (GetPrivateProfileIntA("Version", "SteamMatchMaking", 0, Path))
 		{
 		default:
 			MessageBoxA(0, "SteamMatchMaking version is not implemented.", 0, 0);
@@ -67,9 +71,9 @@ void SteamCommon::Init()
 		}
 	}
 
-	if (ValueExists("Version", "SteamMatchMakingServers", "hAPI.ini"))
+	if (ValueExists("Version", "SteamMatchMakingServers", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamMatchMakingServers", 0, "hAPI.ini"))
+		switch (GetPrivateProfileIntA("Version", "SteamMatchMakingServers", 0, Path))
 		{
 		default:
 			MessageBoxA(0, "SteamMatchMakingServers version is not implemented.", 0, 0);
@@ -77,9 +81,9 @@ void SteamCommon::Init()
 		}
 	}
 
-	if (ValueExists("Version", "SteamUserStats", "hAPI.ini"))
+	if (ValueExists("Version", "SteamUserStats", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamUserStats", 0, "hAPI.ini"))
+		switch (GetPrivateProfileIntA("Version", "SteamUserStats", 0, Path))
 		{
 		default:
 			MessageBoxA(0, "SteamUserStats version is not implemented.", 0, 0);
@@ -87,9 +91,11 @@ void SteamCommon::Init()
 		}
 	}
 
-	if (ValueExists("Version", "SteamApps", "hAPI.ini"))
+	if (ValueExists("Version", "SteamApps", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamApps", 0, "hAPI.ini"))
+		int K = GetPrivateProfileIntA("Version", "SteamApps", 0, Path);
+		K += 20;
+		switch (GetPrivateProfileIntA("Version", "SteamApps", 0, Path))
 		{
 		case 001:
 			steamApps = (ISteamApps *) new SteamApps001();
@@ -113,9 +119,9 @@ void SteamCommon::Init()
 		}
 	}
 
-	if (ValueExists("Version", "SteamNetworking", "hAPI.ini"))
+	if (ValueExists("Version", "SteamNetworking", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamNetworking", 0, "hAPI.ini"))
+		switch (GetPrivateProfileIntA("Version", "SteamNetworking", 0, Path))
 		{
 		default:
 			MessageBoxA(0, "SteamNetworking version is not implemented.", 0, 0);
@@ -123,9 +129,9 @@ void SteamCommon::Init()
 		}
 	}
 
-	if (ValueExists("Version", "SteamRemoteStorage", "hAPI.ini"))
+	if (ValueExists("Version", "SteamRemoteStorage", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamRemoteStorage", 0, "hAPI.ini"))
+		switch (GetPrivateProfileIntA("Version", "SteamRemoteStorage", 0, Path))
 		{
 		default:
 			MessageBoxA(0, "SteamRemoteStorage version is not implemented.", 0, 0);
@@ -133,9 +139,9 @@ void SteamCommon::Init()
 		}
 	}
 
-	if (ValueExists("Version", "SteamScreenshots", "hAPI.ini"))
+	if (ValueExists("Version", "SteamScreenshots", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamScreenshots", 0, "hAPI.ini"))
+		switch (GetPrivateProfileIntA("Version", "SteamScreenshots", 0, Path))
 		{
 		default:
 			MessageBoxA(0, "SteamScreenshots version is not implemented.", 0, 0);
@@ -143,9 +149,9 @@ void SteamCommon::Init()
 		}
 	}
 
-	if (ValueExists("Version", "SteamHTTP", "hAPI.ini"))
+	if (ValueExists("Version", "SteamHTTP", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamHTTP", 0, "hAPI.ini"))
+		switch (GetPrivateProfileIntA("Version", "SteamHTTP", 0, Path))
 		{
 		default:
 			MessageBoxA(0, "SteamHTTP version is not implemented.", 0, 0);
@@ -153,9 +159,9 @@ void SteamCommon::Init()
 		}
 	}
 
-	if (ValueExists("Version", "SteamUnifiedMessages", "hAPI.ini"))
+	if (ValueExists("Version", "SteamUnifiedMessages", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamUnifiedMessages", 0, "hAPI.ini"))
+		switch (GetPrivateProfileIntA("Version", "SteamUnifiedMessages", 0, Path))
 		{
 		default:
 			MessageBoxA(0, "SteamUnifiedMessages version is not implemented.", 0, 0);
@@ -163,9 +169,9 @@ void SteamCommon::Init()
 		}
 	}
 
-	if (ValueExists("Version", "SteamController", "hAPI.ini"))
+	if (ValueExists("Version", "SteamController", Path))
 	{
-		switch (GetPrivateProfileIntA("Version", "SteamController", 0, "hAPI.ini"))
+		switch (GetPrivateProfileIntA("Version", "SteamController", 0, Path))
 		{
 		default:
 			MessageBoxA(0, "SteamController version is not implemented.", 0, 0);

@@ -6,6 +6,12 @@ HSteamPipe SteamClient009::CreateSteamPipe()
 	return 1;
 }
 
+ISteamGameServerStats *SteamClient009::GetISteamGameServerStats(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
+{
+	HHSDBG();
+	return SteamCommon::GetSteamGameServerStats();
+}
+
 bool SteamClient009::BReleaseSteamPipe(HSteamPipe hSteamPipe)
 {
 	HHSDBG();

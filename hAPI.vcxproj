@@ -349,6 +349,7 @@
     <ClCompile Include="Steam\ISteam\SteamFriends\SteamFriends013.cpp" />
     <ClCompile Include="Steam\ISteam\SteamUnifiedMessages\SteamUnifiedMessages001.cpp" />
     <ClCompile Include="Steam\SteamCommon.cpp" />
+    <ClCompile Include="Steam\Steam_API.cpp" />
     <ClCompile Include="Utils\Log.cpp" />
   </ItemGroup>
   <ItemGroup>

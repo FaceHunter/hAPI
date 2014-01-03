@@ -145,3 +145,9 @@ ISteamController* SteamClient012::GetISteamController(HSteamUser hSteamUser, HSt
 	HHSDBG();
 	return SteamCommon::GetSteamController();
 }
+
+ISteamGameServerStats *SteamClient012::GetISteamGameServerStats(HSteamUser hSteamUser, HSteamPipe hSteamPipe, const char *pchVersion)
+{
+	HHSDBG();
+	return SteamCommon::GetSteamGameServerStats();
+}

@@ -836,6 +836,9 @@
     <ClCompile Include="Steam\ISteam\SteamFriends\SteamFriends013.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Steam\Steam_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="hAPI.ini" />
