@@ -33,8 +33,9 @@ void SteamCommon::Init()
 	{
 		switch (GetPrivateProfileIntA("Version", "SteamUser", 0, Path))
 		{
-		case 017:
+		case 17:
 			steamUser = (ISteamUser *)new SteamUser017();
+			break;
 
 		default:
 			MessageBoxA(0, "Steamuser version is not implemented.", 0, 0);
@@ -44,9 +45,11 @@ void SteamCommon::Init()
 
 	if (ValueExists("Version", "SteamFriends", Path))
 	{
+		int K = GetPrivateProfileIntA("Version", "SteamFriends", 0, Path);
+		K += 10;
 		switch (GetPrivateProfileIntA("Version", "SteamFriends", 0, Path))
 		{
-		case 013:
+		case 13:
 			steamFriends = (ISteamFriends *) new SteamFriends013();
 			break;
 
@@ -288,7 +291,6 @@ ISteamRemoteStorage *SteamCommon::GetSteamRemoteStorage()
 
 ISteamUser *SteamCommon::GetSteamUser()
 {
-	HHSDBG();
 	return steamUser;
 }
 

@@ -8,7 +8,6 @@ HSteamUser SteamUser017::GetHSteamUser()
 
 bool SteamUser017::BLoggedOn()
 {
-	HHSDBG();
 	return true;
 }
 

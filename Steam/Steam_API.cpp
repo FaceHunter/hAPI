@@ -66,7 +66,6 @@ extern "C"
 
 	__declspec(dllexport) void __cdecl SteamAPI_RunCallbacks()
 	{
-		//Log::Debug("SteamAPI", "%s()", __FUNCTION__);
 		Callbacks::Run();
 	}
 
@@ -266,8 +265,6 @@ extern "C"
 
 	__declspec(dllexport) void* __cdecl SteamUser()
 	{
-		HHSDBG();
-
 		return SteamCommon::GetSteamUser();
 	}
 
