@@ -40,6 +40,8 @@
 #include "OSW\CCallback.h"
 #include "OSW\UserCommon.h"
 
+#include "OSW\ISteamUnifiedMessages001.h"
+#include "OSW\ISteamController001.h"
 
 
 
@@ -69,6 +71,10 @@
 // Callbacks
 #include "Callbacks.h"
 
+// Messagages
+#include "Server\SteamUnifiedMessages\SteamUnifiedMessages001.h"
+
+// Controller
 
 
 

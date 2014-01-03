@@ -315,6 +315,7 @@
     <ClInclude Include="Steam\Server\SteamClient\SteamClient010.h" />
     <ClInclude Include="Steam\Server\SteamClient\SteamClient011.h" />
     <ClInclude Include="Steam\Server\SteamClient\SteamClient012.h" />
+    <ClInclude Include="Steam\Server\SteamUnifiedMessages\SteamUnifiedMessages001.h" />
     <ClInclude Include="Steam\Steam.h" />
     <ClInclude Include="Steam\SteamCommon.h" />
     <ClInclude Include="Utils\Log.h" />
@@ -337,6 +338,8 @@
     <ClCompile Include="Steam\Server\SteamClient\SteamClient009.cpp" />
     <ClCompile Include="Steam\Server\SteamClient\SteamClient010.cpp" />
     <ClCompile Include="Steam\Server\SteamClient\SteamClient011.cpp" />
+    <ClCompile Include="Steam\Server\SteamClient\SteamClient012.cpp" />
+    <ClCompile Include="Steam\Server\SteamUnifiedMessages\SteamUnifiedMessages001.cpp" />
     <ClCompile Include="Steam\SteamCommon.cpp" />
     <ClCompile Include="Utils\Log.cpp" />
   </ItemGroup>

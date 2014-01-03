@@ -2,6 +2,7 @@
 
 void SteamCommon::Init()
 {
+	HHSDBG();
 	steamID = new CSteamID();
 
 	// TODO: Read which version of the classes to instanciate.
@@ -11,7 +12,7 @@ void SteamCommon::Init()
 
 SteamAPICall_t SteamCommon::RequestEncryptedAppTicket(const void *pUserData, int cbUserData)
 {
-
+	HHSDBG();
 	uint64 userID = GetSteamID()->ConvertToUint64();
 
 	memset(encryptedAppTicket, 0, sizeof(encryptedAppTicket));
@@ -31,102 +32,132 @@ SteamAPICall_t SteamCommon::RequestEncryptedAppTicket(const void *pUserData, int
 
 CSteamID *SteamCommon::GetSteamID()
 {
+	HHSDBG();
 	return steamID;
 }
 
 char *SteamCommon::GetEncryptedAppTicket()
 {
+	HHSDBG();
 	return encryptedAppTicket;
 }
 
 char *SteamCommon::GetPlayerName()
 {
+	HHSDBG();
 	return playerName;
 }
 
 void SteamCommon::SetPlayerName(const char *newName)
 {
+	HHSDBG();
 	strcpy(&playerName[0], newName);
 }
 
 ISteamApps *SteamCommon::GetSteamApps()
 {
+	HHSDBG();
 	return steamApps;
 }
 
 ISteamFriends *SteamCommon::GetSteamFriends()
 {
+	HHSDBG();
 	return steamFriends;
 }
 
 ISteamGameServer *SteamCommon::GetSteamGameServer()
 {
+	HHSDBG();
 	return steamGameServer;
 }
 
 ISteamGameServerStats *SteamCommon::GetSteamGameServerStats()
 {
+	HHSDBG();
 	return steamGameServerStats;
 }
 
 ISteamHTTP *SteamCommon::GetSteamHTTP()
 {
+	HHSDBG();
 	return steamHTTP;
 }
 
 ISteamMatchmaking *SteamCommon::GetSteamMatchmaking()
 {
+	HHSDBG();
 	return steamMatchmaking;
 }
 
 ISteamMatchmakingServers *SteamCommon::GetSteamMatchmakingServers()
 {
+	HHSDBG();
 	return steamMatchmakingServers;
 }
 
 ISteamNetworking *SteamCommon::GetSteamNetworking()
 {
+	HHSDBG();
 	return steamNetworking;
 }
 
 ISteamRemoteStorage *SteamCommon::GetSteamRemoteStorage()
 {
+	HHSDBG();
 	return steamRemoteStorage;
 }
 
 ISteamUser *SteamCommon::GetSteamUser()
 {
+	HHSDBG();
 	return steamUser;
 }
 
 ISteamUserStats *SteamCommon::GetSteamUserStats()
 {
+	HHSDBG();
 	return steamUserStats;
 }
 
 ISteamUtils *SteamCommon::GetSteamUtils()
 {
+	HHSDBG();
 	return steamUtils;
 }
 
 ISteamBilling *SteamCommon::GetSteamBilling()
 {
+	HHSDBG();
 	return steamBilling;
 }
 
 ISteamContentServer *SteamCommon::GetSteamContentServer()
 {
+	HHSDBG();
 	return steamContentServer;
 }
 
 ISteamMasterServerUpdater *SteamCommon::GetSteamMasterServerUpdater()
 {
+	HHSDBG();
 	return steamMasterServerUpdater;
 }
 
+ISteamController *SteamCommon::GetSteamController()
+{
+	HHSDBG();
+	return steamController;
+}
 ISteamScreenshots *SteamCommon::GetSteamScreenshots()
 {
+	HHSDBG();
 	return steamScreenshots;
+}
+ISteamUnifiedMessages *SteamCommon::GetSteamUnifiedMessages()
+{
+	HHSDBG();
+	return steamUnifiedMessages;
 }
 
 CSteamID *SteamCommon::steamID = NULL;
@@ -147,8 +178,9 @@ ISteamBilling *SteamCommon::steamBilling = NULL;
 ISteamContentServer *SteamCommon::steamContentServer = NULL;
 ISteamMasterServerUpdater *SteamCommon::steamMasterServerUpdater = NULL;
 
+ISteamController *SteamCommon::steamController = NULL;
 ISteamScreenshots *SteamCommon::steamScreenshots = NULL;
-
+ISteamUnifiedMessages *SteamCommon::steamUnifiedMessages = NULL;
 
 char SteamCommon::encryptedAppTicket[128];
 char SteamCommon::playerName[255];

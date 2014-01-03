@@ -747,6 +747,9 @@
     <ClInclude Include="Steam\Callbacks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Steam\Server\SteamUnifiedMessages\SteamUnifiedMessages001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Steam\Server\SteamApps\SteamApps001.cpp">
@@ -801,6 +804,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Steam\Server\SteamClient\SteamClient011.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\Server\SteamClient\SteamClient012.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\Server\SteamUnifiedMessages\SteamUnifiedMessages001.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

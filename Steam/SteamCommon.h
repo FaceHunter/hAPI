@@ -35,7 +35,10 @@ public:
 	static ISteamContentServer *GetSteamContentServer();
 	static ISteamMasterServerUpdater *GetSteamMasterServerUpdater();
 
+	static ISteamController *GetSteamController();
 	static ISteamScreenshots *GetSteamScreenshots();
+	static ISteamUnifiedMessages *GetSteamUnifiedMessages();
+	
 
 private:
 	static CSteamID *steamID;
@@ -60,7 +63,9 @@ private:
 	static ISteamContentServer *steamContentServer;
 	static ISteamMasterServerUpdater *steamMasterServerUpdater;
 
+	static ISteamController *steamController;
 	static ISteamScreenshots *steamScreenshots;
+	static ISteamUnifiedMessages *steamUnifiedMessages;
 
 	static char encryptedAppTicket[128];
 	static char playerName[255];
