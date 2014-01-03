@@ -349,6 +349,9 @@
     <ClCompile Include="Steam\SteamCommon.cpp" />
     <ClCompile Include="Utils\Log.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="hAPI.ini" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -8,6 +8,8 @@ public:
 	static void Init();
 
 	static CSteamID *GetSteamID();
+	static AppId_t GetSteamAppID();
+
 	static SteamAPICall_t RequestEncryptedAppTicket(const void *pUserData, int cbUserData);
 
 	static char *GetEncryptedAppTicket();
@@ -42,6 +44,7 @@ public:
 
 private:
 	static CSteamID *steamID;
+	static AppId_t steamAppID;
 
 	static ISteamApps *steamApps;
 	static ISteamFriends *steamFriends;

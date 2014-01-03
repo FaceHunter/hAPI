@@ -1,13 +1,156 @@
 #include <STDInc.h>
 
+bool ValueExists(char *Section, char *Key, char *File)
+{
+	char Buffer[512];
+	if (GetPrivateProfileString(Section, Key, NULL, Buffer, 512, File) > 0)
+		return true;
+	return false;
+}
+
 void SteamCommon::Init()
 {
 	HHSDBG();
 	steamID = new CSteamID();
 
-	// TODO: Read which version of the classes to instanciate.
+	char Buffer[512];
 
-	strcpy(&playerName[0], "Convery");
+	if (GetPrivateProfileString("Authentication", "Username", "Unknown", Buffer, 512, "hAPI.ini") > 0)
+		strcpy(&playerName[0], Buffer);
+
+	if (ValueExists("Game", "SteamAppID", "hAPI.ini"))
+		steamAppID = GetPrivateProfileIntA("Game", "SteamAppID", 0, "hAPI.ini");
+
+	// Which version of the classes to use.
+	if (ValueExists("Version", "SteamUser", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamUser", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "Steamuser version is not implemented.", 0, 0);
+			break;
+		}
+	}
+
+	if (ValueExists("Version", "SteamFriends", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamFriends", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "SteamFriends version is not implemented.", 0, 0);
+			break;
+		}
+	}
+
+	if (ValueExists("Version", "SteamUtils", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamUtils", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "SteamUtils version is not implemented.", 0, 0);
+			break;
+		}
+	}
+
+	if (ValueExists("Version", "SteamMatchMaking", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamMatchMaking", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "SteamMatchMaking version is not implemented.", 0, 0);
+			break;
+		}
+	}
+
+	if (ValueExists("Version", "SteamMatchMakingServers", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamMatchMakingServers", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "SteamMatchMakingServers version is not implemented.", 0, 0);
+			break;
+		}
+	}
+
+	if (ValueExists("Version", "SteamUserStats", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamUserStats", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "SteamUserStats version is not implemented.", 0, 0);
+			break;
+		}
+	}
+
+	if (ValueExists("Version", "SteamApps", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamApps", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "SteamApps version is not implemented.", 0, 0);
+			break;
+		}
+	}
+
+	if (ValueExists("Version", "SteamNetworking", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamNetworking", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "SteamNetworking version is not implemented.", 0, 0);
+			break;
+		}
+	}
+
+	if (ValueExists("Version", "SteamRemoteStorage", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamRemoteStorage", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "SteamRemoteStorage version is not implemented.", 0, 0);
+			break;
+		}
+	}
+
+	if (ValueExists("Version", "SteamScreenshots", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamScreenshots", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "SteamScreenshots version is not implemented.", 0, 0);
+			break;
+		}
+	}
+
+	if (ValueExists("Version", "SteamHTTP", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamHTTP", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "SteamHTTP version is not implemented.", 0, 0);
+			break;
+		}
+	}
+
+	if (ValueExists("Version", "SteamUnifiedMessages", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamUnifiedMessages", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "SteamUnifiedMessages version is not implemented.", 0, 0);
+			break;
+		}
+	}
+
+	if (ValueExists("Version", "SteamController", "hAPI.ini"))
+	{
+		switch (GetPrivateProfileIntA("Version", "SteamController", 0, "hAPI.ini"))
+		{
+		default:
+			MessageBoxA(0, "SteamController version is not implemented.", 0, 0);
+			break;
+		}
+	}
 }
 
 SteamAPICall_t SteamCommon::RequestEncryptedAppTicket(const void *pUserData, int cbUserData)
@@ -34,6 +177,11 @@ CSteamID *SteamCommon::GetSteamID()
 {
 	HHSDBG();
 	return steamID;
+}
+
+AppId_t SteamCommon::GetSteamAppID()
+{
+	return steamAppID;
 }
 
 char *SteamCommon::GetEncryptedAppTicket()
@@ -161,6 +309,7 @@ ISteamUnifiedMessages *SteamCommon::GetSteamUnifiedMessages()
 }
 
 CSteamID *SteamCommon::steamID = NULL;
+AppId_t SteamCommon::steamAppID = NULL;
 ISteamApps *SteamCommon::steamApps = NULL;
 ISteamFriends *SteamCommon::steamFriends = NULL;
 ISteamGameServer *SteamCommon::steamGameServer = NULL;

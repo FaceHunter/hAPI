@@ -831,4 +831,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="hAPI.ini" />
+  </ItemGroup>
 </Project>
