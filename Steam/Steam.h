@@ -49,6 +49,7 @@
 #include "OSW\ISteamFriends013.h"
 #include "OSW\ISteamUser017.h"
 #include "OSW\ISteamUtils006.h"
+#include "OSW\ISteamMatchmaking009.h"
 
 
 
@@ -96,6 +97,11 @@
 
 // Util
 #include "ISteam\SteamUtils\SteamUtils006.h"
+
+// Matchmaking
+#include "ISteam\SteamMatchmaking\SteamMatchmaking009.h"
+
+
 
 
 

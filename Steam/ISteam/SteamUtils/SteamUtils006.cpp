@@ -19,10 +19,8 @@ EUniverse SteamUtils006::GetConnectedUniverse()
 
 uint32 SteamUtils006::GetServerRealTime()
 {
-	time_t Clock;
 	HHSDBG();
-	time(&Clock);
-	return Clock;
+	return 32222;
 }
 
 const char *SteamUtils006::GetIPCountry()

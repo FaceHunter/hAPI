@@ -768,6 +768,9 @@
     <ClInclude Include="Steam\ISteam\SteamUtils\SteamUtils006.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking009.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Utils\Log.cpp">
@@ -849,6 +852,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Steam\ISteam\SteamUtils\SteamUtils006.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking009.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
