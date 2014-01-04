@@ -765,6 +765,9 @@
     <ClInclude Include="Steam\ISteam\SteamUser\SteamUser017.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamUtils\SteamUtils006.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Utils\Log.cpp">
@@ -843,6 +846,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Steam\ISteam\SteamUser\SteamUser017.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamUtils\SteamUtils006.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

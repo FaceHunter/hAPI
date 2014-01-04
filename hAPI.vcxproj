@@ -82,6 +82,7 @@
     <ClInclude Include="Steam\ISteam\SteamContentServer\SteamContentServer002.h" />
     <ClInclude Include="Steam\ISteam\SteamFriends\SteamFriends013.h" />
     <ClInclude Include="Steam\ISteam\SteamUser\SteamUser017.h" />
+    <ClInclude Include="Steam\ISteam\SteamUtils\SteamUtils006.h" />
     <ClInclude Include="Steam\OSW\AppsCommon.h" />
     <ClInclude Include="Steam\OSW\AppTicketCommon.h" />
     <ClInclude Include="Steam\OSW\BillingCommon.h" />
@@ -350,6 +351,7 @@
     <ClCompile Include="Steam\ISteam\SteamFriends\SteamFriends013.cpp" />
     <ClCompile Include="Steam\ISteam\SteamUnifiedMessages\SteamUnifiedMessages001.cpp" />
     <ClCompile Include="Steam\ISteam\SteamUser\SteamUser017.cpp" />
+    <ClCompile Include="Steam\ISteam\SteamUtils\SteamUtils006.cpp" />
     <ClCompile Include="Steam\SteamCommon.cpp" />
     <ClCompile Include="Steam\Steam_API.cpp" />
     <ClCompile Include="Utils\Log.cpp" />

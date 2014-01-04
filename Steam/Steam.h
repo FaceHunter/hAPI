@@ -48,7 +48,7 @@
 
 #include "OSW\ISteamFriends013.h"
 #include "OSW\ISteamUser017.h"
-
+#include "OSW\ISteamUtils006.h"
 
 
 
@@ -93,6 +93,9 @@
 
 // User
 #include "ISteam\SteamUser\SteamUser017.h"
+
+// Util
+#include "ISteam\SteamUtils\SteamUtils006.h"
 
 
 
