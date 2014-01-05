@@ -91,6 +91,9 @@
 #include "ISteam\SteamContentServer\SteamContentServer002.h"
 
 // Friends
+#include "ISteam\SteamFriends\SteamFriends001.h"
+#include "ISteam\SteamFriends\SteamFriends002.h"
+#include "ISteam\SteamFriends\SteamFriends003.h"
 #include "ISteam\SteamFriends\SteamFriends013.h"
 
 // User
@@ -100,10 +103,27 @@
 #include "ISteam\SteamUtils\SteamUtils006.h"
 
 // Matchmaking
+#include "ISteam\SteamMatchmaking\SteamMatchmaking001.h"
+#include "ISteam\SteamMatchmaking\SteamMatchmaking002.h"
+#include "ISteam\SteamMatchmaking\SteamMatchmaking003.h"
+#include "ISteam\SteamMatchmaking\SteamMatchmaking004.h"
+#include "ISteam\SteamMatchmaking\SteamMatchmaking005.h"
+#include "ISteam\SteamMatchmaking\SteamMatchmaking006.h"
+#include "ISteam\SteamMatchmaking\SteamMatchmaking007.h"
+#include "ISteam\SteamMatchmaking\SteamMatchmaking008.h"
 #include "ISteam\SteamMatchmaking\SteamMatchmaking009.h"
 
 // Networking
 #include "ISteam\SteamNetworking\SteamNetworking005.h"
+
+
+
+
+
+
+
+
+
 
 
 

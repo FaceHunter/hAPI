@@ -789,6 +789,27 @@
     <ClInclude Include="Steam\ISteam\SteamNetworking\SteamNetworking005.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking005.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking006.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking007.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking008.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamFriends\SteamFriends002.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamFriends\SteamFriends001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamFriends\SteamFriends003.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Utils\Log.cpp">
@@ -885,6 +906,27 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking004.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking005.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking006.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking007.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking008.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamFriends\SteamFriends002.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamFriends\SteamFriends003.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\ISteam\SteamFriends\SteamFriends001.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
