@@ -50,7 +50,6 @@
 #include "OSW\ISteamUser017.h"
 #include "OSW\ISteamUtils006.h"
 #include "OSW\ISteamMatchmaking009.h"
-#include "OSW\ISteamNetworking005.h"
 
 
 
@@ -102,8 +101,7 @@
 // Matchmaking
 #include "ISteam\SteamMatchmaking\SteamMatchmaking009.h"
 
-// Networking
-#include "ISteam\SteamNetworking\SteamNetworking005.h"
+
 
 
 

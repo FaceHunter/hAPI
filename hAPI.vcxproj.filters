@@ -771,7 +771,16 @@
     <ClInclude Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking009.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Steam\ISteam\SteamNetworking\SteamNetworking005.h">
+    <ClInclude Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamMatchmaking002.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamMatchmaking003.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamMatchmaking004.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -860,7 +869,16 @@
     <ClCompile Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking009.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Steam\ISteam\SteamNetworking\SteamNetworking005.cpp">
+    <ClCompile Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking001.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamMatchmaking002.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamMatchmaking003.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamMatchmaking004.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

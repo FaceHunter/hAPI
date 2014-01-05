@@ -42,7 +42,7 @@
     <OutDir>$(SolutionDir)\Bin\$(Configuration)\</OutDir>
     <TargetName>steam_api</TargetName>
     <TargetExt>.dll</TargetExt>
-    <IncludePath>C:\Users\Convery\Documents\GitHub\hAPI\HHS;C:\Users\Convery\Documents\GitHub\hAPI;C:\Users\Convery\Documents\GitHub\hAPI\Steam;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Imposter\Documents\GitHub\hAPI\HHS;C:\Users\Imposter\Documents\GitHub\hAPI;C:\Users\Imposter\Documents\GitHub\hAPI\Steam;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)\Bin\$(Configuration)\</OutDir>
@@ -75,14 +75,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="SteamMatchmaking002.h" />
+    <ClInclude Include="SteamMatchmaking003.h" />
+    <ClInclude Include="SteamMatchmaking004.h" />
     <ClInclude Include="Steam\Callbacks.h" />
     <ClInclude Include="Steam\ISteam\SteamApps\SteamApps005.h" />
     <ClInclude Include="Steam\ISteam\SteamApps\SteamApps004.h" />
     <ClInclude Include="Steam\ISteam\SteamContentServer\SteamContentServer001.h" />
     <ClInclude Include="Steam\ISteam\SteamContentServer\SteamContentServer002.h" />
     <ClInclude Include="Steam\ISteam\SteamFriends\SteamFriends013.h" />
+    <ClInclude Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking001.h" />
     <ClInclude Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking009.h" />
-    <ClInclude Include="Steam\ISteam\SteamNetworking\SteamNetworking005.h" />
     <ClInclude Include="Steam\ISteam\SteamUser\SteamUser017.h" />
     <ClInclude Include="Steam\ISteam\SteamUtils\SteamUtils006.h" />
     <ClInclude Include="Steam\OSW\AppsCommon.h" />
@@ -330,6 +333,9 @@
     <ClInclude Include="STDInc.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="SteamMatchmaking002.cpp" />
+    <ClCompile Include="SteamMatchmaking003.cpp" />
+    <ClCompile Include="SteamMatchmaking004.cpp" />
     <ClCompile Include="Steam\Callbacks.cpp" />
     <ClCompile Include="Steam\ISteam\SteamApps\SteamApps005.cpp" />
     <ClCompile Include="Steam\ISteam\SteamApps\SteamApps004.cpp" />
@@ -351,8 +357,8 @@
     <ClCompile Include="Steam\ISteam\SteamContentServer\SteamContentServer002.cpp" />
     <ClCompile Include="Steam\ISteam\SteamController\SteamController001.cpp" />
     <ClCompile Include="Steam\ISteam\SteamFriends\SteamFriends013.cpp" />
+    <ClCompile Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking001.cpp" />
     <ClCompile Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking009.cpp" />
-    <ClCompile Include="Steam\ISteam\SteamNetworking\SteamNetworking005.cpp" />
     <ClCompile Include="Steam\ISteam\SteamUnifiedMessages\SteamUnifiedMessages001.cpp" />
     <ClCompile Include="Steam\ISteam\SteamUser\SteamUser017.cpp" />
     <ClCompile Include="Steam\ISteam\SteamUtils\SteamUtils006.cpp" />
