@@ -86,6 +86,8 @@
     <ClInclude Include="Steam\ISteam\SteamFriends\SteamFriends013.h" />
     <ClInclude Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking001.h" />
     <ClInclude Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking009.h" />
+    <ClInclude Include="Steam\ISteam\SteamNetworking\SteamNetworking005.cpp" />
+    <ClInclude Include="Steam\ISteam\SteamNetworking\SteamNetworking005.h" />
     <ClInclude Include="Steam\ISteam\SteamUser\SteamUser017.h" />
     <ClInclude Include="Steam\ISteam\SteamUtils\SteamUtils006.h" />
     <ClInclude Include="Steam\OSW\AppsCommon.h" />

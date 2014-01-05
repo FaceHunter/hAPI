@@ -783,6 +783,12 @@
     <ClInclude Include="Steam\ISteam\SteamMatchmaking\SteamMatchmaking004.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamNetworking\SteamNetworking005.cpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\ISteam\SteamNetworking\SteamNetworking005.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Utils\Log.cpp">
